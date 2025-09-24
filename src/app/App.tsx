@@ -53,10 +53,10 @@ function App() {
           <div className="vacancies-container">
             {isLoading
               ? mockData.map((item) => {
-                  return <VacancyCard vacancy={item} isLoading />;
+                  return <VacancyCard key={item.id} vacancy={item} isLoading />;
                 })
               : vacancies.map((item) => {
-                  return <VacancyCard vacancy={item} />;
+                  return <VacancyCard key={item.id} vacancy={item} />;
                 })}
             <Pagination
               value={page + 1}

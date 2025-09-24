@@ -57,7 +57,7 @@ const SkillSet = () => {
       <div className={styles["skill-set-container"]}>
         {skills.map((item) => {
           return (
-            <span className={styles["pill"]}>
+            <span key={item} className={styles["pill"]}>
               {item}
               <span
                 onClick={() => {

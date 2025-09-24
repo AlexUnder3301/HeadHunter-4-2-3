@@ -52,6 +52,7 @@ export const fetchVacancies = createAsyncThunk(
 
       const vacancies: VacancyType[] = response.items.map((item) => {
         return {
+          id: item.id,
           employerName: item.employer?.name ?? "Не указано",
           name: item.name,
           experience: item.experience?.id ?? "Не указано",

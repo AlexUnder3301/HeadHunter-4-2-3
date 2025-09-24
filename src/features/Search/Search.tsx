@@ -12,7 +12,6 @@ const Search = () => {
   const dispatch = useTypedDispatch();
 
   const handleSearch = useCallback(() => {
-    console.log(searchParam);
     dispatch(setSearch(searchParam));
     dispatch(configureTextParam());
   }, [dispatch, searchParam]);

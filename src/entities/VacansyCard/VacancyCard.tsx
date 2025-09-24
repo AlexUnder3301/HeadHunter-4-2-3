@@ -29,6 +29,7 @@ const VacancyCard = ({
     return (
       <div
         className={classNames(styles["vacancy-card"], styles["loading"])}
+        data-testid="vacancy-card"
       ></div>
     );
   }

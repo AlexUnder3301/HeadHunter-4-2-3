@@ -3,12 +3,12 @@ export interface ParamsType {
   professional_role: number;
   per_page: number;
   area: number;
-  // search_field: "name",
   text: string;
   page: number;
 }
 
 export interface VacancyType {
+  id: string;
   employerName: string;
   name: string;
   experience: string;
@@ -26,6 +26,7 @@ export interface ResponseType {
   page: number;
   pages: number;
   items: {
+    id: string;
     employer: {
       name: string;
     };
