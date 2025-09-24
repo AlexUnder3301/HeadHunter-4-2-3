@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://yourusername.github.io/HeadHunter-4-2-3",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -10,7 +11,9 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "lint": "eslint . --config eslint.config.js",
-    "lint:fix": "eslint . --config eslint.config.js --fix"
+    "lint:fix": "eslint . --config eslint.config.js --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mantine/core": "^8.3.1",

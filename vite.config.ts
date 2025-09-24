@@ -12,4 +12,5 @@ export default defineConfig({
       },
     }),
   ],
+  base: "/HeadHunter-4-2-3/",
 });
