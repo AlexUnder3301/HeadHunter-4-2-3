@@ -1,0 +1,98 @@
+.vacancy-card {
+  width: 659px;
+  height: 248px;
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &-heading {
+    color: var(--mantine-color-primary-9);
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .salary-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+
+    .salary {
+      color: var(--mantine-color-black-0);
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    .experience {
+      color: var(--mantine-color-black-5);
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .employer-name {
+    color: var(--mantine-color-black-5);
+    margin-top: 32px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .work-format {
+    border-radius: 2px;
+    height: 16px;
+    font-size: 9px;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    background-color: lightcoral;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 12px;
+  }
+
+  .REMOTE {
+    color: white;
+    background-color: var(--mantine-color-primary-7);
+  }
+
+  .ON_SITE {
+    color: var(--mantine-color-black-5);
+    background-color: var(--mantine-color-black-1);
+  }
+
+  .HYBRID {
+    color: white;
+    background-color: var(--mantine-color-black-0);
+  }
+
+  .city {
+    color: black;
+    margin-top: 8px;
+  }
+
+  .buttons-container {
+    display: flex;
+    gap: 12px;
+    margin-top: auto;
+    .vacancy-button {
+      color: white;
+      background-color: var(--mantine-color-black-0);
+    }
+
+    .response-button {
+      color: var(--mantine-color-black-0);
+      background-color: var(--mantine-color-black-1);
+    }
+  }
+}
+
+.loading {
+  color: black;
+  background-image: url("../../shared/assets/12-dots-scale-rotate.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50px;
+}

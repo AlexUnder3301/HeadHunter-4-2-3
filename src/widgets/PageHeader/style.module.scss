@@ -1,0 +1,62 @@
+.page-header {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  justify-content: center;
+  gap: 16px;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+
+    .logo-img {
+      width: 30px;
+      height: 30px;
+      margin: 0 8px;
+    }
+
+    .logo-text {
+      color: black;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .vacancies {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &-text {
+      color: black;
+    }
+
+    &-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--mantine-color-primary-7);
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--mantine-color-black-8);
+    cursor: pointer;
+
+    &-text {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

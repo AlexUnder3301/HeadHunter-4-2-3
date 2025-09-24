@@ -1,0 +1,65 @@
+.skill-set {
+  padding: 24px;
+  width: 317px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-sizing: border-box;
+
+  &-heading {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .input-container {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+
+    .input {
+      border-radius: 8px;
+      background-color: white;
+      border: 1px solid var(--mantine-color-black-5);
+      height: 30px;
+      padding: 0 8px;
+      width: 100%;
+      color: black;
+    }
+
+    .input-button {
+      width: 34px;
+      height: 30px;
+      background-color: #228be680;
+      background-image: url("../../shared/assets/plus.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
+  &-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+    .pill {
+      color: black;
+      background-color: #f6f6f7;
+      padding: 2px 12px;
+      border-radius: 16px;
+      font-size: 12px;
+      font-weight: 400;
+
+      span {
+        color: var(--mantine-color-black-7);
+        margin-left: 6px;
+        cursor: pointer;
+      }
+    }
+  }
+}
